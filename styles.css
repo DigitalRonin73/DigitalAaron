@@ -97,9 +97,8 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   color: #fff;
-  margin-top: 50px; /* Prevents overlap with the header */
+  margin-top: 220px; /* Push content down so it doesn’t overlap the header */
 }
-
 /* Call-to-Action Button */
 .cta-button {
   padding: 10px 20px;
