@@ -9,6 +9,7 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
+
 #visitor-info {
   background: #f4f4f4;
   padding: 2em 0;
@@ -43,6 +44,16 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Header Image Styles */
+.header-image {
+  width: 100%;       /* Makes the image span the full width of the page */
+  height: auto;      /* Maintains aspect ratio */
+  display: block;    /* Removes extra spacing */
+  object-fit: cover; /* Ensures a clean fit without stretching */
+  max-height: 400px; /* Adjust this if needed */
+}
+
+/* Navigation styles */
 nav ul {
   display: flex;
   justify-content: center;
