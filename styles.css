@@ -38,7 +38,7 @@ body {
 header {
   position: relative;
   width: 100%;
-  height: 200px; /* Adjusted height for header */
+  height: 180px; /* Slightly reduced height */
   text-align: center;
   overflow: hidden; /* Prevents extra spacing */
 }
@@ -46,8 +46,8 @@ header {
 /* Header Image */
 .header-image {
   width: 100%;
-  height: 200px; /* Matches the header height */
-  max-height: 200px; /* Ensures it doesn’t get too large */
+  height: 180px; /* Matches the header height */
+  max-height: 180px; /* Prevents it from taking over */
   display: block;
   object-fit: cover; /* Prevents stretching */
   position: absolute;
@@ -67,30 +67,6 @@ nav {
   border-radius: 8px;
   z-index: 1000; /* Ensures it stays above the header image */
 }
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #FFD700;
-}
-
 /* Hero Section */
 #hero {
   height: 80vh;
