@@ -10,6 +10,7 @@ body {
   animation: gradient 15s ease infinite;
 }
 
+/* Visitor Info Section */
 #visitor-info {
   background: #f4f4f4;
   padding: 2em 0;
@@ -36,21 +37,35 @@ body {
 /* Header and Navigation */
 header {
   position: relative;
+  width: 100%;
+  height: 250px; /* Adjusted height */
   text-align: center;
-  padding: 0; /* Remove extra padding */
-  background: none; /* Remove background color */
+  overflow: hidden; /* Prevents unwanted space */
 }
 
-/* Header Image Styles */
+/* Header Image */
 .header-image {
   width: 100%;
-  height: 300px; /* Set a fixed height so it doesn’t take over the page */
+  height: 250px; /* Matches the header height */
   display: block;
-  object-fit: cover;
-  position: relative;
-  z-index: -1; /* Moves it behind the navigation bar */
+  object-fit: cover; /* Prevents stretching */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Keeps it behind the navigation */
 }
-/* Navigation styles */
+
+/* Navigation Bar */
+nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
+  padding: 10px 25px;
+  border-radius: 8px;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -76,14 +91,16 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
+  margin-top: 50px; /* Prevents overlap with the header */
 }
 
+/* Call-to-Action Button */
 .cta-button {
   padding: 10px 20px;
   background: #FFD700;
@@ -108,6 +125,7 @@ section {
   margin: auto;
 }
 
+/* Project Cards */
 .project-card {
   border: 1px solid #ddd;
   padding: 1em;
@@ -135,6 +153,7 @@ body.dark-mode .cta-button {
   color: #f4f4f4;
 }
 
+/* Floating Dark Mode Button */
 button {
   position: fixed;
   bottom: 20px;
