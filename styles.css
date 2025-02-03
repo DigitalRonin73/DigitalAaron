@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(-45deg, #007BFF, #FFD700, #FF5733, #00C6FF);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+#visitor-info {
+  background: #f4f4f4;
+  padding: 2em 0;
+  text-align: center;
+}
+
+#visitor-info .container {
+  width: 80%;
+  margin: auto;
+}
+
+#visitor-info p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+#visitor-info small {
+  display: block;
+  margin-top: 1em;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Header and Navigation */
+header {
+  background: #007BFF;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #FFD700;
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background: #FFD700;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #FF5733;
+}
+
+/* Sections */
+section {
+  padding: 2em 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #f4f4f4;
+}
+
+body.dark-mode header {
+  background: #333;
+}
+
+body.dark-mode .cta-button {
+  background: #444;
+  color: #f4f4f4;
+}
+
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
