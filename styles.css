@@ -45,20 +45,20 @@ header {
 
 /* Header Image Fix */
 .header-image {
-  width: 100%; /* Makes the image full width */
-  max-width: 1200px; /* Prevents it from being too large on big screens */
+  width: 90%; /* Keeps it large but not full width */
+  max-width: 900px; /* Prevents it from being too big */
   height: auto; /* Maintains aspect ratio */
   display: block;
-  margin: 0 auto; /* Centers the image */
+  margin: 0 auto 15px auto; /* Centers the image and adds space below */
 }
 /* Navigation Bar */
 nav {
   text-align: center;
-  background: rgba(0, 0, 0, 0.8); /* Darkened for better contrast */
-  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.8); /* Darkened for contrast */
+  padding: 10px 20px;
   border-radius: 8px;
-  width: fit-content;
-  margin: 10px auto; /* Centers it below the image */
+  display: inline-block; /* Makes it fit content */
+  margin: 0 auto; /* Centers it */
 }
 nav ul {
   display: flex;
