@@ -1,9 +1,23 @@
-/* Header Image */
-.header-image {
-  width: 90%;
-  max-width: 900px;
+/* Logo Styling */
+.logo-container {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.logo {
+  width: 120px; /* Adjust as needed */
+  max-width: 150px;
   height: auto;
-  max-height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Header Image (Banner) */
+.header-image {
+  width: 90%; /* Keeps it large but not oversized */
+  max-width: 1000px; /* Prevents it from getting too big */
+  height: auto;
+  max-height: 250px; /* Ensures it’s not too tall */
   display: block;
   margin: 0 auto 15px auto;
   object-fit: contain;
@@ -17,9 +31,7 @@ nav {
   border-radius: 8px;
   display: inline-block;
   margin: 0 auto;
-}
-
-/* Terminal Window */
+}/* Terminal Window */
 #terminal {
   display: flex;
   justify-content: center;
