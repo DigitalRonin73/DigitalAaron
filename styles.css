@@ -46,10 +46,12 @@ header {
 /* Header Image Fix */
 .header-image {
   width: 90%; /* Keeps it large but not full width */
-  max-width: 900px; /* Prevents it from being too big */
+  max-width: 900px; /* Prevents it from being too wide */
   height: auto; /* Maintains aspect ratio */
+  max-height: 250px; /* Prevents it from getting too tall */
   display: block;
   margin: 0 auto 15px auto; /* Centers the image and adds space below */
+  object-fit: contain; /* Ensures the whole image is visible within the limits */
 }
 /* Navigation Bar */
 nav {
