@@ -43,18 +43,14 @@ header {
   overflow: hidden;
 }
 
-/* Header Image */
+/* Header Image Fix */
 .header-image {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1; /* Keeps it behind the navigation */
+  object-fit: contain; /* Ensures the full image is visible */
+  max-height: 250px; /* Adjust this if needed */
 }
-
 /* Navigation Bar */
 nav {
   position: absolute;
