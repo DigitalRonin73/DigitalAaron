@@ -45,28 +45,21 @@ header {
 
 /* Header Image Fix */
 .header-image {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Makes the image full width */
+  max-width: 1200px; /* Prevents it from being too large on big screens */
+  height: auto; /* Maintains aspect ratio */
   display: block;
-  object-fit: contain; /* Ensures the full image is visible */
-  max-height: 250px; /* Adjust this if needed */
+  margin: 0 auto; /* Centers the image */
 }
 /* Navigation Bar */
 nav {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px 25px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8); /* Darkened for better contrast */
+  padding: 10px 0;
   border-radius: 8px;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  width: max-content;
-  flex-wrap: wrap;
+  width: fit-content;
+  margin: 10px auto; /* Centers it below the image */
 }
-
 nav ul {
   display: flex;
   justify-content: center;
