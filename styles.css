@@ -1,214 +1,51 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background: linear-gradient(-45deg, #007BFF, #FFD700, #FF5733, #00C6FF);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-/* Visitor Info Section */
-#visitor-info {
-  background: #f4f4f4;
-  padding: 2em 0;
-  text-align: center;
-}
-
-#visitor-info .container {
-  width: 80%;
-  margin: auto;
-}
-
-#visitor-info p {
-  font-size: 1.2em;
-  margin: 0.5em 0;
-}
-
-#visitor-info small {
-  display: block;
-  margin-top: 1em;
-  font-size: 0.9em;
-  color: #555;
-}
-
-/* Header and Navigation */
-header {
-  position: relative;
-  width: 100%;
-  min-height: 180px;
-  text-align: center;
-  overflow: hidden;
-}
-
-/* Header Image Fix */
+/* Header Image */
 .header-image {
-  width: 90%; /* Keeps it large but not full width */
-  max-width: 900px; /* Prevents it from being too wide */
-  height: auto; /* Maintains aspect ratio */
-  max-height: 250px; /* Prevents it from getting too tall */
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  max-height: 250px;
   display: block;
-  margin: 0 auto 15px auto; /* Centers the image and adds space below */
-  object-fit: contain; /* Ensures the whole image is visible within the limits */
+  margin: 0 auto 15px auto;
+  object-fit: contain;
 }
+
 /* Navigation Bar */
 nav {
   text-align: center;
-  background: rgba(0, 0, 0, 0.8); /* Darkened for contrast */
+  background: rgba(0, 0, 0, 0.8);
   padding: 10px 20px;
   border-radius: 8px;
-  display: inline-block; /* Makes it fit content */
-  margin: 0 auto; /* Centers it */
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #FFD700;
-}
-
-/* Hero Section */
-#hero {
-  min-height: 75vh;
+/* Terminal Window */
+#terminal {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: #fff;
-  margin-top: 190px;
-  padding: 2em 1em;
+  margin: 30px auto;
 }
 
-/* Call-to-Action Button */
-.cta-button {
-  padding: 10px 20px;
-  background: #FFD700;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background 0.3s ease, transform 0.2s;
-}
-
-.cta-button:hover {
-  background: #FF5733;
-  transform: scale(1.05);
-}
-
-/* Sections */
-section {
-  padding: 2em 0;
-}
-
-.container {
+.terminal-container {
   width: 80%;
-  margin: auto;
-}
-
-/* Project Cards */
-.project-card {
-  border: 1px solid #ddd;
-  padding: 1em;
-  margin-bottom: 1em;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background: #121212;
-  color: #f4f4f4;
-}
-
-body.dark-mode header {
-  background: rgba(0, 0, 0, 0.85);
-}
-
-body.dark-mode .cta-button {
-  background: #444;
-  color: #f4f4f4;
-}
-
-body.dark-mode .cta-button:hover {
-  background: #666;
-}
-
-/* Floating Dark Mode Button */
-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background: #007BFF;
-  color: #fff;
-  border: none;
+  max-width: 800px;
+  background-color: #121212;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s;
+  padding: 15px;
+  font-family: "Courier New", monospace;
+  color: #0f0;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
-button:hover {
-  background: #0056b3;
-  transform: scale(1.05);
+.terminal-header {
+  background-color: #222;
+  padding: 5px;
+  font-size: 14px;
+  color: #fff;
 }
 
-/* -------------------------- */
-/* Mobile-Friendly Adjustments */
-/* -------------------------- */
-@media (max-width: 768px) {
-  /* Reduce header size on smaller screens */
-  header {
-    min-height: 150px;
-  }
-
-  .header-image {
-    min-height: 150px;
-    height: auto;
-  }
-
-  /* Adjust nav placement for smaller screens */
-  nav {
-    top: 10px;
-    padding: 8px 20px;
-  }
-
-  #hero {
-    margin-top: 160px; /* Prevents overlap */
-    padding: 1em;
-  }
-
-  /* Make project cards stack vertically */
-  .project-card {
-    width: 100%;
-    margin-bottom: 1em;
-  }
-
-  /* Ensure buttons are touch-friendly */
-  button {
-    bottom: 15px;
-    right: 15px;
-    padding: 12px 18px;
-  }
+.terminal-body {
+  padding: 10px;
+  white-space: pre-wrap;
 }
