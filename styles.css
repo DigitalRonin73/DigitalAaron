@@ -5,7 +5,7 @@
 }
 
 .logo {
-  width: 120px; /* Adjust as needed */
+  width: 120px; /* Keeps logo at a reasonable size */
   max-width: 150px;
   height: auto;
   display: block;
@@ -31,7 +31,9 @@ nav {
   border-radius: 8px;
   display: inline-block;
   margin: 0 auto;
-}/* Terminal Window */
+}
+
+/* Terminal Window */
 #terminal {
   display: flex;
   justify-content: center;
@@ -55,6 +57,7 @@ nav {
   padding: 5px;
   font-size: 14px;
   color: #fff;
+  text-align: center;
 }
 
 .terminal-body {
